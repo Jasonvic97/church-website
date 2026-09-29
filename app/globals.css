@@ -19,7 +19,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 /* Navigation and identity */
 .site-header{position:sticky;z-index:40;top:0;height:82px;background:rgba(255,254,250,.97);border-bottom:1px solid rgba(23,24,22,.08);backdrop-filter:blur(14px)}
 .site-header__inner{display:flex;width:min(1360px,calc(100% - 64px));height:100%;align-items:center;justify-content:space-between;margin-inline:auto}
-.brand{display:inline-flex;flex:0 0 auto;align-items:center;justify-content:center}.brand__logo{display:block;width:54px;height:54px;object-fit:contain}.brand__mark,.brand__wordmark{display:none}
+.brand{display:inline-flex;flex:0 0 auto;align-items:center;justify-content:center}.brand__logo{display:block;width:54px;height:54px;object-fit:contain}
 .brand__mark{position:relative;display:grid;width:39px;height:42px;place-items:center;overflow:hidden;color:var(--gold-light);background:repeating-linear-gradient(0deg,transparent 0 4px,rgba(216,197,143,.12) 4px 5px),var(--ink);border:1px solid rgba(184,155,93,.65);font-family:var(--font-display);font-size:28px;line-height:1}
 .brand__mark:after{position:absolute;inset:4px;border:1px solid rgba(215,194,141,.28);content:""}
 .brand__wordmark{display:flex;flex-direction:column;color:var(--ink);font-size:10px;font-weight:700;letter-spacing:.1em;line-height:1.6;text-transform:uppercase;white-space:nowrap}
@@ -32,6 +32,38 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 .primary-nav .primary-nav__visit{display:inline-flex;align-items:center;gap:12px;padding:10px 13px;color:var(--white);background:var(--ink);font-size:10px;transition:background 180ms ease}
 .primary-nav__visit:hover{background:#373932!important}.primary-nav__visit span{color:var(--gold-light)}
 .menu-toggle{display:none}
+.footer-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+}
+
+.footer-brand img {
+  display: block;
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.footer-brand__text {
+  display: flex;
+  flex-direction: column;
+  color: var(--ink);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  line-height: 1.6;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.footer-brand__text span:last-child {
+  color: #72736d;
+  font-size: 8px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+}
 
 /* Shared type and controls */
 .eyebrow{margin:0 0 19px;color:#77786f;font-size:10px;font-weight:700;letter-spacing:.18em;line-height:1.5;text-transform:uppercase}

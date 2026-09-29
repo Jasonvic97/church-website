@@ -27,7 +27,7 @@ export function Navbar() {
         >
           <Image
             className="brand__logo"
-            src="/images/church/logo.svg"
+            src="/images/church/logo.png"
             alt="Homestead Assembly"
             width={54}
             height={54}
