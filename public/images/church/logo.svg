@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+<title>Homestead Assembly logo placeholder</title>
+<desc>Gold H mark on a dark background with subtle horizontal lines.</desc>
+<rect width="160" height="160" fill="#171816"/>
+<g opacity=".12" stroke="#d7c28d" stroke-width="1">
+<path d="M0 8H160"/><path d="M0 14H160"/><path d="M0 20H160"/><path d="M0 26H160"/><path d="M0 32H160"/><path d="M0 38H160"/><path d="M0 44H160"/><path d="M0 50H160"/><path d="M0 56H160"/><path d="M0 62H160"/><path d="M0 68H160"/><path d="M0 74H160"/><path d="M0 80H160"/><path d="M0 86H160"/><path d="M0 92H160"/><path d="M0 98H160"/><path d="M0 104H160"/><path d="M0 110H160"/><path d="M0 116H160"/><path d="M0 122H160"/><path d="M0 128H160"/><path d="M0 134H160"/><path d="M0 140H160"/><path d="M0 146H160"/>
+</g>
+<rect x="12" y="12" width="136" height="136" fill="none" stroke="#b89b5d" opacity=".75"/>
+<path d="M43 34v92M117 34v92M43 80h74" fill="none" stroke="#d7c28d" stroke-width="11" stroke-linecap="square"/>
+</svg>
