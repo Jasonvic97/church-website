@@ -1,16 +1,10 @@
 import { Button } from "@/components/ui/button";
-import { ImagePlaceholder } from "@/components/ui/image-placeholder";
 import { siteConfig } from "@/lib/site-config";
 
 export function Hero() {
   return (
     <section className="hero" aria-labelledby="hero-title">
-      <ImagePlaceholder
-        label="Abstract sanctuary light and linework; church photography will be added here"
-        variant="sanctuary"
-        className="hero__art"
-        stamp="A place to belong"
-      />
+      <div className="hero__art" aria-hidden="true" />
       <div className="hero__wash" />
       <div className="hero__content page-wrap">
         <div className="hero__copy">
@@ -28,12 +22,11 @@ export function Hero() {
           </div>
         </div>
         <div className="hero__index" aria-hidden="true">
-          <span>01</span><span className="hero__index-rule" /><span>Faith · Community · Purpose</span>
+          <span>01</span><span className="hero__index-rule" /><span>All We Need Is Love</span>
         </div>
       </div>
-      <a className="hero__scroll" href="#who-we-are">
-        <span>Scroll to explore</span><span aria-hidden="true">↓</span>
-      </a>
+      <div className="hero__fade" aria-hidden="true" />
+      <div className="hero__who" aria-hidden="true">Who We Are</div>
     </section>
   );
 }
