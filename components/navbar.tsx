@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { siteConfig } from "@/lib/site-config";
@@ -18,13 +19,22 @@ export function Navbar() {
   return (
     <header className="site-header">
       <div className="site-header__inner">
-        <Link className="brand" href="/" onClick={() => setIsOpen(false)} aria-label="Homestead Assembly home">
-          <span className="brand__mark" aria-hidden="true">H</span>
-          <span className="brand__wordmark">
-            <span>{siteConfig.shortName}</span>
-            <span>{siteConfig.descriptor}</span>
-          </span>
+        <Link
+          className="brand"
+          href="/"
+          onClick={() => setIsOpen(false)}
+          aria-label="Homestead Assembly home"
+        >
+          <Image
+            className="brand__logo"
+            src="/images/church/logo.svg"
+            alt="Homestead Assembly"
+            width={54}
+            height={54}
+            priority
+          />
         </Link>
+
         <button
           className={"menu-toggle" + (isOpen ? " menu-toggle--open" : "")}
           type="button"
@@ -36,6 +46,7 @@ export function Navbar() {
           <span />
           <span />
         </button>
+
         <nav
           className={"primary-nav" + (isOpen ? " primary-nav--open" : "")}
           id="primary-navigation"
@@ -51,7 +62,7 @@ export function Navbar() {
               {item.label}
             </Link>
           ))}
-          <Link className="primary-nav__visit" href="/#contact" onClick={() => setIsOpen(false)}>
+          <Link className="primary-nav__visit" href="/contact" onClick={() => setIsOpen(false)}>
             Plan a visit <span aria-hidden="true">↗</span>
           </Link>
         </nav>
