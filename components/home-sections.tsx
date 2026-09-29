@@ -29,7 +29,7 @@ export function HaymSection() {
           <h2 id="haym-countdown-title">Something good<br /><em>is gathering.</em></h2>
           <p className="haym-band__date">{siteConfig.haym.dateLabel}</p>
           <p className="haym-band__description">{siteConfig.haym.theme}</p>
-          <Button href="/youth#haym" variant="light">Discover HAYM</Button>
+          <Button href="/haym" variant="light">Discover HAYM</Button>
         </div>
         <div className="haym-band__count">
           <p className="countdown-overline">The countdown is on</p>
@@ -61,7 +61,7 @@ export function WhoWeAreSection() {
             church feel like home.
           </p>
           <p className="placeholder-note"><span aria-hidden="true">✦</span> This introduction is sample copy and will be updated by the church.</p>
-          <Button href="/#mission" variant="outline">Our mission</Button>
+          <Button href="/mission" variant="outline">Our mission</Button>
         </Reveal>
       </div>
     </section>
@@ -148,7 +148,7 @@ export function MessagesSection() {
       <div className="page-wrap">
         <div className="messages-section__heading">
           <SectionHeading eyebrow="Take a moment" title="A word for the way." description="Listen, reflect, and carry a little encouragement with you." />
-          <Link className="text-link" href="/#livestream">Livestream details <span aria-hidden="true">↗</span></Link>
+          <Link className="text-link" href="/livestream">Livestream details <span aria-hidden="true">↗</span></Link>
         </div>
         <MessageCard {...latestMessage} />
       </div>
@@ -162,7 +162,7 @@ export function EventsSection() {
       <div className="page-wrap">
         <div className="events-section__heading">
           <SectionHeading eyebrow="Make a little room" title="Gather with us." description="Church and youth event information will be shared here as dates are confirmed." />
-          <Link className="text-link" href="/#contact">Ask about visiting <span aria-hidden="true">↗</span></Link>
+          <Link className="text-link" href="/contact">Ask about visiting <span aria-hidden="true">↗</span></Link>
         </div>
         <div className="events-grid">
           {events.map((event, index) => (
