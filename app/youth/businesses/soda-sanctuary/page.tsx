@@ -37,7 +37,6 @@ export default function SodaSanctuaryPage() {
         <div className="soda-hero__inner page-wrap">
           <div className="soda-hero__copy">
             <Image className="soda-hero__logo" src="/images/youth/soda-sanctuary/logo.png?v=20260930200343" alt="The Soda Sanctuary logo" width={509} height={491} sizes="112px" />
-            <p className="soda-eyebrow">Youth Business</p>
             <h1>The Soda<br />Sanctuary</h1>
             <p className="soda-hero__tagline">Sip Something Heavenly</p>
             <p className="soda-hero__description">A youth-created specialty drink business serving creative dirty sodas, energy drinks, Poppi creations, lemonades, and custom combinations. Refreshing drinks. Creative flavors. Made with purpose.</p>

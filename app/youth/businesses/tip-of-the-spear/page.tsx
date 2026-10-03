@@ -6,13 +6,13 @@ const linktreeUrl = "https://linktr.ee/tipofthespearofficial";
 const logoSrc = "/images/youth/tip-of-the-spear/logo.png";
 
 const focusAreas = [
-  "Spiritually",
-  "Financially",
-  "Physically",
-  "Intellectually",
-  "Mentally",
-  "Emotionally",
-  "Socially",
+  "Spiritual",
+  "Finance",
+  "Physical",
+  "Intellect",
+  "Mental",
+  "Emotion",
+  "Social",
 ] as const;
 
 export const metadata: Metadata = {
@@ -27,11 +27,10 @@ export default function TipOfTheSpearPage() {
       <section className={styles.hero} aria-labelledby="spear-title">
         <div className={`${styles.container} ${styles.heroInner}`}>
           <div className={styles.heroCopy}>
-            <p className={styles.kicker}>Homestead Assembly Youth</p>
             <h1 id="spear-title" className={styles.heroTitle}>
               <span>Become the best version of yourself.</span>
             </h1>
-            <p className={styles.heroThesis}>Biblical principles and practical wisdom for daily living.</p>
+            <p className={styles.heroThesis}>Biblical principles and wisdom for daily living.</p>
             <p className={styles.heroSupport}>
               So you can fulfill everything God has called you to do.
             </p>

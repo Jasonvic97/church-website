@@ -18,7 +18,6 @@ export default function CopyCatCharmsPage() {
       <section className={styles.hero} aria-labelledby="copy-cat-title">
         <div className={styles.heroInner}>
           <div className={styles.heroCopy}>
-            <p className={styles.eyebrow}>Homestead Assembly Youth · Youth Business</p>
             <h1 id="copy-cat-title" className={styles.heroTitle}>
               Copy Cat Charms
             </h1>
