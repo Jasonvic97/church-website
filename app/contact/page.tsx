@@ -8,7 +8,7 @@ export default function ContactPage() {
         <div className="page-wrap">
           <p className="eyebrow">Get connected</p>
           <h1>Come as you are.<br /><em>Let&apos;s connect.</em></h1>
-          <p>{siteConfig.contactNote}</p>
+          {/* <p>{siteConfig.contactNote}</p> */}
         </div>
       </section>
       <section className="simple-page__body section-pad">
