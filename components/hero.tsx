@@ -26,7 +26,6 @@ export function Hero() {
         </div>
       </div>
       <div className="hero__fade" aria-hidden="true" />
-      <div className="hero__who" aria-hidden="true">Who We Are</div>
     </section>
   );
 }

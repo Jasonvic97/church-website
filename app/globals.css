@@ -90,9 +90,9 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 .hero{position:relative;display:flex;min-height:max(610px,min(760px,calc(100svh - 82px)));align-items:center;overflow:hidden;color:var(--white);background:#171916}
 .hero__art,.hero__wash,.hero__fade{position:absolute;inset:0}
 .hero__art{border-radius:0;background-image:url("/images/church/home-hero.jpg");background-position:center;background-size:cover;background-repeat:no-repeat}
-.hero__wash{background:linear-gradient(90deg,rgba(16,17,15,.92) 2%,rgba(16,17,15,.74) 41%,rgba(16,17,15,.15)),linear-gradient(0deg,rgba(16,17,15,.62),transparent 37%)}
-.hero__fade{z-index:1;background:linear-gradient(180deg,transparent 58%,rgba(16,17,15,.18) 69%,rgba(16,17,15,.84) 88%,var(--paper) 100%)}
-.hero__who{position:absolute;z-index:2;right:max(36px,calc((100vw - var(--wrap))/2));bottom:24px;color:rgba(255,254,250,.5);font-family:var(--font-display);font-size:clamp(28px,4vw,58px);font-weight:400;letter-spacing:-.055em;text-transform:uppercase;white-space:nowrap;opacity:.82;animation:hero-who-enter 1100ms 500ms both ease-out}
+.hero__wash{background:linear-gradient(90deg,rgba(16,17,15,.96) 2%,rgba(16,17,15,.76) 41%,rgba(16,17,15,.26)),linear-gradient(0deg,rgba(16,17,15,.82),transparent 45%)}
+.hero__fade{z-index:1;background:linear-gradient(180deg,transparent 55%,rgba(16,17,15,.42) 70%,#10110f 88%,var(--paper) 100%)}
+.who-section__wordmark{margin:0 auto clamp(38px,5vw,64px);color:rgba(23,24,22,.55);font-family:var(--font-display);font-size:clamp(28px,4vw,58px);font-weight:400;letter-spacing:-.055em;line-height:1;text-align:center;text-transform:uppercase;opacity:.82;animation:hero-who-enter 1100ms 500ms both ease-out}
 .hero__content{position:relative;z-index:2;display:flex;min-height:inherit;align-items:center;justify-content:space-between;padding-block:88px 118px}
 .hero__copy{width:min(630px,75%);animation:hero-enter 900ms 120ms both cubic-bezier(.2,.7,.2,1)}
 .hero h1,.youth-hero h1,.businesses-hero h1{margin:0;font-family:var(--font-display);font-size:clamp(54px,7.3vw,101px);font-weight:400;letter-spacing:-.06em;line-height:.99}
@@ -190,8 +190,8 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 .site-footer__intro{max-width:290px;margin:20px 0 0;color:rgba(255,254,250,.53);font-family:var(--font-display);font-size:17px;line-height:1.45}
 .footer-label{margin:4px 0 16px;color:var(--gold-light);font-size:8px;font-weight:700;letter-spacing:.19em;text-transform:uppercase}
 .footer-links{display:grid;grid-template-columns:1fr 1fr;gap:8px 17px}
-.footer-links a,.site-footer__contact,.footer-socials{color:rgba(255,254,250,.59);font-size:9px;line-height:1.7}.footer-links a:hover{color:var(--white)}
-.site-footer__contact{max-width:220px;margin:0 0 13px}.footer-socials{display:grid;gap:4px}.footer-socials span span{color:rgba(255,254,250,.36)}
+.footer-links a,.site-footer__contact,.site-footer__address,.footer-service-times,.footer-socials{color:rgba(255,254,250,.66);font-size:10px;line-height:1.7}.footer-links a:hover{color:var(--white)}
+.site-footer__contact{max-width:260px;margin:0 0 13px}.site-footer__address{display:grid;margin:0 0 15px;font-style:normal}.footer-label--subsection{margin-top:15px;margin-bottom:7px}.footer-service-times{display:grid;gap:2px;margin:0;padding:0;list-style:none}.footer-service-times li{display:flex;max-width:220px;justify-content:space-between;gap:14px}.footer-service-times time{color:rgba(255,254,250,.87)}.footer-socials{display:flex;flex-wrap:wrap;gap:10px 14px;margin-top:15px}.footer-socials a{color:rgba(255,254,250,.72);text-decoration:none}.footer-socials a:hover{color:var(--white)}.footer-socials a:focus-visible{outline:2px solid var(--gold-light);outline-offset:3px}
 .site-footer__bottom{display:flex;min-height:59px;align-items:center;justify-content:space-between;gap:15px;border-top:1px solid rgba(255,254,250,.13);color:rgba(255,254,250,.43);font-size:8px;letter-spacing:.05em}
 .site-footer__bottom a{color:var(--gold-light)}.site-footer__bottom a span{margin-left:4px}
 
@@ -317,7 +317,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 @media(max-width:640px){
  html{scroll-padding-top:76px}body{font-size:14px}.page-wrap{width:calc(100% - 40px)}.section-pad{padding-block:76px}
  .site-header{height:70px}.site-header__inner{width:calc(100% - 34px)}.brand__mark{width:35px;height:38px;font-size:25px}.brand__wordmark{font-size:9px}.brand__wordmark span:last-child{font-size:7px}.menu-toggle{width:39px;height:39px}
- .hero{min-height:max(630px,calc(88svh - 70px))}.hero__wash{background:linear-gradient(90deg,rgba(16,17,15,.88),rgba(16,17,15,.43)),linear-gradient(0deg,rgba(16,17,15,.74),transparent 58%)}.hero__art{background-position:center center}.hero__who{right:20px;bottom:20px;font-size:clamp(22px,8vw,42px)}
+ .hero{min-height:max(630px,calc(88svh - 70px))}.hero__wash{background:linear-gradient(90deg,rgba(16,17,15,.94),rgba(16,17,15,.58)),linear-gradient(0deg,rgba(16,17,15,.88),transparent 58%)}.hero__art{background-position:center center}.who-section__wordmark{margin-bottom:32px;font-size:clamp(22px,8vw,42px)}
  .hero__content{width:calc(100% - 40px);min-height:inherit;align-items:flex-start;padding-block:122px 100px}.hero__copy{width:100%}.eyebrow{margin-bottom:15px;font-size:8px}.hero h1{font-size:clamp(52px,15vw,76px)}
  .hero__welcome{max-width:330px;margin-top:19px;font-size:13px}.hero__actions{gap:8px;margin-top:25px}.button{min-height:46px;gap:19px;padding-inline:13px;font-size:9px}
  .welcome-note{min-height:165px;align-items:flex-start;flex-direction:column;justify-content:center;gap:15px;padding:32px 20px}.welcome-note p{font-size:29px}.welcome-note__place{font-size:7px}
@@ -352,4 +352,186 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 @media(prefers-reduced-motion:reduce){
  *,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
  .reveal.is-ready{opacity:1;transform:none}
+}
+
+/* Youth mini-site and business showcase */
+.youth-nav{color:#f8fbf8;background:#15343a}
+.youth-nav a:hover{color:#82ddd5}
+.youth-nav__links{display:flex;align-items:center;gap:clamp(18px,3vw,42px)}
+.youth-nav__brand{display:flex;flex:0 0 auto;align-items:center}
+.youth-nav__brand img{display:block;object-fit:contain}
+.youth-businesses-page,.youth-info-page{background:#fbf8ef;color:#17313b}
+.youth-businesses-intro{position:relative;display:flex;min-height:355px;align-items:center;overflow:hidden;background:radial-gradient(ellipse at 90% 20%,rgba(246,139,130,.58),transparent 23%),linear-gradient(115deg,#bcebe3,#f3eee0 76%)}
+.youth-businesses-intro__inner{position:relative;z-index:1;padding-block:68px}
+.youth-businesses-eyebrow{margin:0 0 13px;color:#247e83;font-size:9px;font-weight:800;letter-spacing:.19em;text-transform:uppercase}
+.youth-businesses-intro h1,.youth-info-page h1{max-width:780px;margin:0;font-family:var(--font-display);font-size:clamp(54px,7vw,88px);font-weight:400;letter-spacing:-.06em;line-height:.98}
+.youth-businesses-intro__inner>p:not(.youth-businesses-eyebrow){max-width:490px;margin:19px 0 0;color:#425960;font-size:14px;line-height:1.7}
+.youth-businesses-scroll{display:inline-flex;gap:12px;align-items:center;margin-top:26px;color:#c53e51;font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.youth-businesses-scroll span{font-size:17px}
+.youth-businesses-intro__spark{position:absolute;right:12%;bottom:-.25em;color:rgba(255,255,255,.57);font-size:300px;line-height:1}
+.youth-businesses-section{background:#fbf8ef}
+.youth-businesses-heading{display:flex;align-items:end;justify-content:space-between;gap:35px;margin-bottom:27px}
+.youth-businesses-heading h2{margin:0;color:#17313b;font-family:var(--font-display);font-size:clamp(35px,4vw,52px);font-weight:400;letter-spacing:-.05em;line-height:1.05}
+.youth-businesses-heading>p{max-width:310px;margin:0 0 4px;color:#637579;font-size:12px;line-height:1.7}
+.youth-businesses-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+.youth-business-tile{position:relative;display:flex;min-width:0;overflow:hidden;flex-direction:column;color:#17313b;background:#fff;border:1px solid rgba(24,67,73,.1);border-radius:17px;text-decoration:none;transition:transform 250ms ease,box-shadow 250ms ease}
+.youth-business-tile:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(33,83,83,.12)}
+.youth-business-tile--featured{grid-column:1/-1;display:grid;grid-template-columns:1.25fr 1fr;align-items:stretch;background:#f9e8dd}
+.youth-business-tile--editorial{grid-column:1/-1;display:grid;grid-template-columns:1.05fr .95fr;align-items:stretch;color:#f3f3f0;background:#101112;border-color:rgba(255,255,255,.12)}
+.youth-business-tile__brand{position:relative;display:grid;min-height:225px;overflow:hidden;place-items:center;background:radial-gradient(ellipse at center,rgba(255,255,255,.12),transparent 54%),#090a0b}
+.youth-business-tile__brand:before,.youth-business-tile__brand:after{position:absolute;inset:9%;border:1px solid rgba(255,255,255,.12);border-radius:50%;content:"";pointer-events:none}
+.youth-business-tile__brand:after{inset:18%;border-color:rgba(255,255,255,.07)}
+.youth-business-tile__brand-logo{position:relative;z-index:1;display:block;width:min(54%,250px);height:auto;object-fit:contain;clip-path:circle(45.5% at 50% 50%);transition:transform 240ms ease}
+.youth-business-tile--editorial:hover .youth-business-tile__brand-logo{transform:scale(1.025)}
+.youth-business-tile--editorial .youth-business-tile__status{color:#b8b8b5}
+.youth-business-tile--editorial .youth-business-tile__tagline{max-width:380px;color:#c3c3c0;font-family:var(--font-sans);font-size:12px;font-style:normal;line-height:1.75}
+.youth-business-tile--editorial .youth-business-tile__link{color:#f3f3f0}
+.youth-business-tile__photos{position:relative;min-height:220px;overflow:hidden;aspect-ratio:2.5/1;background:#74d8d4}
+.youth-business-tile__drink-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center bottom}
+.youth-business-tile__logo{position:absolute;bottom:17px;left:18px;width:76px;height:74px;object-fit:contain}
+.youth-business-tile__content{display:flex;min-height:220px;flex-direction:column;align-items:flex-start;justify-content:center;padding:26px 34px}
+.youth-business-tile__status{margin:0 0 10px;color:#bf4251;font-size:9px;font-weight:800;letter-spacing:.17em;text-transform:uppercase}
+.youth-business-tile h3{margin:0;font-family:var(--font-display);font-size:clamp(24px,3vw,38px);font-weight:400;letter-spacing:-.04em;line-height:1.06}
+.youth-business-tile__tagline{margin:10px 0 0;color:#b84257;font-family:var(--font-display);font-size:20px;font-style:italic}
+.youth-business-tile__link{display:flex;gap:12px;align-items:center;margin-top:22px;color:#247e83;font-size:9px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.youth-business-tile__link span{font-size:15px}
+.youth-business-tile--coming{min-height:200px;justify-content:center;padding:25px;background:#f7e7e4}
+.youth-business-tile--coming:nth-child(3){background:#e5f2ed}
+.youth-business-tile--coming:nth-child(4){background:#e1f2f1}
+.youth-business-tile--coming h3{font-size:clamp(21px,2.6vw,30px)}
+.youth-business-tile--product{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);align-items:stretch;color:#314238;background:#f2f0e7;border-color:rgba(49,66,56,.12)}
+.youth-business-tile__product-art{display:flex;min-width:0;min-height:320px;align-items:center;justify-content:center;overflow:hidden;padding:clamp(18px,3vw,34px);background:#e4e9dd}
+.youth-business-tile__product-image{display:block;width:min(100%,360px);height:auto;object-fit:contain}
+.youth-business-tile--product .youth-business-tile__status{color:#718775}
+.youth-business-tile--product .youth-business-tile__tagline{color:#8b6370}
+.youth-business-tile--product .youth-business-tile__link{color:#597563}
+.youth-business-tile--typographic{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);align-items:stretch;color:#f2f1ed;background:#111213;border-color:rgba(201,168,107,.24)}
+.youth-business-tile__typographic-art{position:relative;display:flex;min-height:260px;align-items:flex-end;overflow:hidden;isolation:isolate;padding:clamp(26px,5vw,58px);background:radial-gradient(ellipse at 72% 34%,rgba(201,168,107,.17),transparent 36%),linear-gradient(130deg,#191a1b,#090a0b 76%)}
+.youth-business-tile__typographic-art:before{position:absolute;z-index:0;inset:17px;border:1px solid rgba(201,168,107,.2);content:"";pointer-events:none}
+.youth-business-tile__typographic-art:after{position:absolute;z-index:0;top:0;right:17%;bottom:0;width:1px;background:linear-gradient(transparent,rgba(201,168,107,.35),transparent);content:"";pointer-events:none}
+.youth-business-tile__typographic-art>span{position:relative;z-index:1;max-width:390px;color:#d3bd91;font-family:var(--font-display);font-size:clamp(35px,5vw,64px);letter-spacing:-.055em;line-height:.98}
+.youth-business-tile--typographic .youth-business-tile__status{color:#c9a86b}
+.youth-business-tile--typographic .youth-business-tile__tagline{max-width:390px;color:#c0bfba;font-family:var(--font-sans);font-size:12px;font-style:normal;line-height:1.75}
+.youth-business-tile--typographic .youth-business-tile__link{color:#e0c78f}
+.youth-info-page__hero{min-height:440px;padding-block:clamp(85px,13vw,160px);background:radial-gradient(ellipse at 90% 15%,rgba(248,145,133,.43),transparent 22%),linear-gradient(125deg,#d0eee4,#faf7ed 66%)}
+.youth-info-page__description{max-width:600px;margin:21px 0 0;color:#405b62;font-size:16px;line-height:1.75}
+.youth-info-page__note{margin:24px 0 0;color:#78888a;font-size:11px;line-height:1.7}
+.youth-meeting-date{display:flex;width:min(100%,500px);flex-direction:column;gap:9px;margin-top:30px;padding:21px 24px;background:rgba(255,255,255,.72);border-left:3px solid #dd6673}
+.youth-meeting-date span{color:#628083;font-size:9px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.youth-meeting-date strong{color:#17313b;font-family:var(--font-display);font-size:24px;font-weight:400}
+.youth-meeting-date .countdown{max-width:470px;margin:12px 0 0}
+.youth-meeting-date .countdown__value{color:#17313b;font-size:clamp(29px,3.2vw,43px)}
+.youth-meeting-date .countdown__unit{border-color:rgba(23,49,59,.16)}
+.youth-meeting-date .countdown__label{color:#8b7648}
+.youth-meeting-date .countdown-state__title{color:#17313b}
+.youth-meeting-date .countdown-state__copy{color:#6d6f67}
+
+/* The Soda Sanctuary visual identity */
+.soda-page{--soda-ink:#172e3c;--soda-aqua:#70d2ca;--soda-coral:#eb4f67;--soda-cream:#fbf6e9;--soda-pink:#f8e2e4;overflow:hidden;color:var(--soda-ink);background:var(--soda-cream)}
+body:has(.soda-page){min-width:0}
+.soda-hero{position:relative;overflow:hidden;background:radial-gradient(ellipse at 4% 28%,rgba(247,160,169,.27),transparent 20%),linear-gradient(115deg,#fffaf0 0%,#f8f2e6 47%,#d9f3eb 100%)}
+.soda-hero__inner{display:grid;min-height:580px;grid-template-columns:minmax(315px,.82fr) minmax(0,1.18fr);align-items:center;gap:clamp(30px,5vw,78px);padding-block:48px}
+.soda-hero__copy{position:relative;z-index:1;max-width:530px;padding-block:8px}
+.soda-hero__logo{display:block;width:96px;height:93px;object-fit:contain}
+.soda-eyebrow{margin:19px 0 11px;color:#218b92;font-size:9px;font-weight:800;letter-spacing:.2em;text-transform:uppercase}
+.soda-hero h1{margin:0;color:var(--soda-ink);font-family:var(--font-display);font-size:clamp(60px,7vw,96px);font-weight:400;letter-spacing:-.065em;line-height:.86}
+.soda-hero__tagline{margin:15px 0 0;color:var(--soda-coral);font-family:var(--font-display);font-size:clamp(23px,2.7vw,35px);font-style:italic;line-height:1.1}
+.soda-hero__description{max-width:475px;margin:18px 0 0;color:#40545d;font-size:13px;line-height:1.75}
+.soda-hero__actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.soda-button{display:inline-flex;min-height:47px;align-items:center;justify-content:center;gap:14px;padding:0 17px;border:1px solid transparent;border-radius:999px;font-size:10px;font-weight:800;text-decoration:none;transition:transform 180ms ease,background 180ms ease,box-shadow 180ms ease}
+.soda-button:hover{transform:translateY(-2px);box-shadow:0 7px 16px rgba(23,46,60,.12)}
+.soda-button span{font-size:15px;line-height:1}
+.soda-button--instagram{color:#fff;background:var(--soda-coral)}
+.soda-button--menu{color:var(--soda-ink);background:rgba(255,255,255,.55);border-color:#2d9ca3}
+.soda-hero__photo-window{position:relative;width:calc(100% + 40px);overflow:hidden;aspect-ratio:2.55/1;border-radius:22px;background:#62d4d6;box-shadow:0 22px 60px rgba(36,102,102,.16)}
+.soda-hero__photo,.soda-social__photo-window img,.soda-drink-feature__image img{object-fit:cover;object-position:center bottom}
+.soda-showcase{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);align-items:start;gap:22px;padding-block:27px 78px}
+.soda-menu{min-width:0;padding:clamp(18px,2.5vw,30px);background:#fffdf7;border:1px solid rgba(28,103,107,.12);border-radius:20px;box-shadow:0 14px 44px rgba(40,75,74,.06)}
+.soda-menu__heading{margin-bottom:17px}
+.soda-menu__heading .soda-eyebrow{margin:0 0 6px}
+.soda-menu__heading h2{margin:0;color:var(--soda-ink);font-family:var(--font-display);font-size:38px;font-weight:400;letter-spacing:-.05em;line-height:1.05}
+.soda-menu__heading>p:last-child{margin:7px 0 0;color:#718081;font-size:11px}
+.soda-menu__image-wrap{position:relative;overflow:hidden;background:#f5f1e4;border:1px solid rgba(23,46,60,.08);border-radius:12px}
+.soda-menu__image{display:block;width:100%;height:auto}
+.soda-menu__open{display:flex;justify-content:space-between;gap:12px;margin-top:12px;color:#277f86;font-size:9px;font-weight:800;letter-spacing:.08em;text-decoration:none;text-transform:uppercase}
+.soda-showcase__aside{display:grid;gap:19px}
+.soda-features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.soda-feature-card{display:flex;min-height:132px;flex-direction:column;align-items:center;justify-content:center;gap:11px;padding:15px 10px;text-align:center;background:var(--soda-pink);border-radius:14px}
+.soda-feature-card:nth-child(2),.soda-feature-card:nth-child(3){background:#e5f4ed}
+.soda-feature-card__icon{width:27px;height:27px;color:var(--soda-coral)}
+.soda-feature-card h3{margin:0;color:var(--soda-ink);font-family:var(--font-display);font-size:17px;font-weight:400;line-height:1.12}
+.soda-social{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);align-items:stretch;overflow:hidden;background:#e9a19c;border-radius:16px}
+.soda-social__photo-window{position:relative;width:100%;overflow:hidden;aspect-ratio:1/1;background:#67cfc9}
+.soda-social__copy{display:flex;flex-direction:column;justify-content:center;padding:20px 21px 22px;color:#fff;background:linear-gradient(115deg,#bc555c,#e8978d)}
+.soda-social__label{margin:0;color:rgba(255,255,255,.8);font-size:8px;font-weight:800;letter-spacing:.2em;text-transform:uppercase}
+.soda-social__handle{margin:7px 0 15px;font-family:var(--font-display);font-size:clamp(21px,2.4vw,31px);line-height:1.05}
+.soda-button--social{min-height:42px;color:#a93e51;background:#fff7ed}
+.soda-drink-feature{padding-block:clamp(34px,5vw,64px);background:linear-gradient(115deg,#e4f5f0,#fff9ef)}
+.soda-drink-feature__inner{display:grid;grid-template-columns:minmax(0,.65fr) minmax(0,1.35fr);align-items:center;gap:clamp(24px,5vw,68px)}
+.soda-drink-feature__copy .soda-eyebrow{margin:0 0 10px}
+.soda-drink-feature__copy h2{margin:0;color:var(--soda-ink);font-family:var(--font-display);font-size:clamp(31px,4vw,55px);font-weight:400;letter-spacing:-.055em;line-height:1.02}
+.soda-drink-feature__image{position:relative;overflow:hidden;aspect-ratio:3/2;border-radius:20px;background:#67d4d8;box-shadow:0 18px 45px rgba(36,102,102,.15)}
+
+@media(max-width:900px){
+ .youth-businesses-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .youth-business-tile--featured{grid-template-columns:1fr}
+ .youth-business-tile--editorial{grid-template-columns:1fr}
+ .youth-business-tile--product{grid-template-columns:1fr}
+ .youth-business-tile--typographic{grid-template-columns:1fr}
+ .youth-business-tile__brand{min-height:245px}
+ .youth-business-tile--featured .youth-business-tile__photos{min-height:0}
+ .youth-business-tile--featured .youth-business-tile__content{min-height:195px}
+ .soda-hero__inner{min-height:510px;grid-template-columns:minmax(255px,.9fr) minmax(0,1.1fr);gap:28px}
+ .soda-hero__photo-window{width:100%}
+ .soda-showcase{grid-template-columns:minmax(0,1fr) minmax(0,.9fr);gap:14px}
+ .soda-menu{padding:18px}
+ .soda-feature-card{min-height:115px}
+ .soda-social{grid-template-columns:minmax(0,1fr)}
+ .soda-drink-feature__inner{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:24px}
+}
+@media(max-width:640px){
+ .youth-nav__links{width:max-content;gap:21px}
+ .youth-businesses-intro{min-height:315px}
+ .youth-businesses-intro__inner{padding-block:52px}
+ .youth-businesses-intro h1,.youth-info-page h1{font-size:clamp(48px,13vw,68px)}
+ .youth-businesses-intro__spark{right:-.08em;font-size:200px}
+ .youth-businesses-heading{align-items:flex-start;flex-direction:column;gap:10px}
+ .youth-businesses-heading h2{font-size:38px}
+ .youth-businesses-heading>p{font-size:11px}
+ .youth-businesses-grid{grid-template-columns:1fr}
+ .youth-business-tile--featured{grid-column:auto}
+ .youth-business-tile--editorial{grid-column:auto}
+ .youth-business-tile--product{grid-column:auto}
+ .youth-business-tile--typographic{grid-column:auto}
+ .youth-business-tile__brand{min-height:0;aspect-ratio:2.5/1}
+ .youth-business-tile__typographic-art{min-height:205px}
+ .youth-business-tile__brand-logo{width:min(45%,190px)}
+ .youth-business-tile__photos{aspect-ratio:2.45/1}
+ .youth-business-tile__content{min-height:185px;padding:23px}
+ .youth-business-tile--coming{min-height:155px}
+ .youth-info-page__hero{min-height:390px;padding-block:85px}
+ .youth-info-page__description{font-size:14px}
+ .youth-meeting-date strong{font-size:21px}
+ .soda-hero__inner{grid-template-columns:minmax(0,1fr);gap:22px;padding-block:26px 22px}
+ .soda-hero__logo{width:82px;height:79px}
+ .soda-hero .soda-eyebrow{margin-top:12px}
+ .soda-hero h1{font-size:clamp(54px,15vw,72px)}
+ .soda-hero__tagline{font-size:25px}
+ .soda-hero__description{margin-top:13px;font-size:12px}
+ .soda-hero__actions{gap:9px;margin-top:18px}
+ .soda-button{min-height:48px;padding-inline:14px;font-size:9px}
+ .soda-hero__photo-window{width:100%;aspect-ratio:2.55/1;border-radius:16px}
+ .soda-showcase{grid-template-columns:minmax(0,1fr);gap:17px;padding-block:4px 50px}
+ .soda-menu{padding:17px;border-radius:16px}
+ .soda-menu__heading h2{font-size:33px}
+ .soda-showcase__aside{gap:17px}
+ .soda-feature-card{min-height:120px}
+ .soda-feature-card h3{font-size:16px}
+ .soda-social__photo-window{aspect-ratio:1/1}
+ .soda-social__copy{padding:18px 20px 20px}
+ .soda-social__handle{font-size:26px}
+ .soda-drink-feature{padding-block:28px}
+ .soda-drink-feature__inner{grid-template-columns:minmax(0,1fr);gap:15px}
+ .soda-drink-feature__copy h2{font-size:clamp(30px,8vw,39px)}
+ .soda-drink-feature__image{border-radius:16px}
 }

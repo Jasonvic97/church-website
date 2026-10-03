@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import { ImagePlaceholder } from "@/components/ui/image-placeholder";
 import { Reveal } from "@/components/ui/reveal";
 import { SectionHeading } from "@/components/ui/section-heading";
-import { YouthNav } from "@/components/youth-nav";
 import { events, siteConfig } from "@/lib/site-config";
 
 export const metadata = {
@@ -16,7 +15,6 @@ export const metadata = {
 export default function YouthPage() {
   return (
     <main id="main-content" className="youth-page">
-      <YouthNav />
       <section className="youth-hero">
         <ImagePlaceholder
           label="Abstract youth gathering artwork; youth photography will be added here"

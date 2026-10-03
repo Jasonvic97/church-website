@@ -16,13 +16,18 @@ export default function ContactPage() {
           <div>
             <p className="eyebrow">Visit</p>
             <h2>Plan a visit.</h2>
-            <p className="body-copy">{siteConfig.location}</p>
+            <p className="body-copy">
+              The church address, service times, and official social links are listed in the footer below.
+            </p>
+            <Link className="button button--primary" href="#contact">
+              View church information <span aria-hidden="true">↓</span>
+            </Link>
           </div>
           <div>
-            <p className="eyebrow">Stay connected</p>
-            <h2>We&apos;ll share more here soon.</h2>
+            <p className="eyebrow">Explore</p>
+            <h2>Get connected with Youth.</h2>
             <p className="body-copy">
-              Service times, contact information, prayer requests, and other ways to connect will be added here as they become available.
+              Discover youth businesses, events, and ways to get involved with Homestead Assembly Youth.
             </p>
             <Link className="button button--primary" href="/youth">
               Explore youth <span aria-hidden="true">↗</span>

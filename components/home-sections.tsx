@@ -44,6 +44,7 @@ export function HaymSection() {
 export function WhoWeAreSection() {
   return (
     <section className="who-section section-pad" id="who-we-are">
+      <div className="who-section__wordmark" aria-hidden="true">Who We Are</div>
       <div className="who-section__grid page-wrap">
         <Reveal className="who-section__image-wrap">
           <ImagePlaceholder
@@ -55,7 +56,7 @@ export function WhoWeAreSection() {
           <span className="image-note">A community shaped by faith, hospitality, and hope.</span>
         </Reveal>
         <Reveal className="who-section__copy" delay={110}>
-          <SectionHeading eyebrow="Who we are" title="A church family, making room for one another." />
+          <SectionHeading title="A church family, making room for one another." />
           <p className="body-copy">
             Homestead Assembly is preparing this space to share our story, our faith, and the people who make this
             church feel like home.

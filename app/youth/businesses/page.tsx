@@ -1,83 +1,72 @@
 import type { Metadata } from "next";
-import { YouthBusinessCard } from "@/components/cards/youth-business-card";
-import { YouthNav } from "@/components/youth-nav";
-import { Button } from "@/components/ui/button";
-import { Reveal } from "@/components/ui/reveal";
-import { SectionHeading } from "@/components/ui/section-heading";
-import { sampleBusinesses } from "@/lib/site-config";
+import { YouthBusinessCard } from "@/components/youth-business-card";
 
 export const metadata: Metadata = {
   title: "Youth Businesses",
-  description: "Meet businesses started and operated by young people in the Homestead Assembly community.",
+  description: "Discover businesses created by young people in the Homestead Assembly community.",
 };
+
+const businesses = [
+  {
+    name: "The Soda Sanctuary",
+    href: "/youth/businesses/soda-sanctuary",
+    logoSrc: "/images/youth/soda-sanctuary/logo.png?v=20260930200343",
+    imageSrc: "/images/youth/soda-sanctuary/hero.png?v=20260930204509",
+    tagline: "Sip Something Heavenly",
+  },
+  {
+    name: "The Tip Of The Spear Podcast",
+    href: "/youth/businesses/tip-of-the-spear",
+    logoSrc: "/images/youth/tip-of-the-spear/logo.png",
+    tagline: "Biblical principles and practical wisdom for daily living.",
+    presentation: "editorial" as const,
+    statusLabel: "Upcoming Podcast",
+    linkLabel: "Explore the podcast",
+  },
+  {
+    name: "Copy Cat Charms",
+    href: "/youth/businesses/copy-cat-charms",
+    imageSrc: "/images/youth/copy-cat-charms/cake-pops-box.PNG",
+    tagline: "Creating Magic One Cake at a Time",
+    presentation: "product" as const,
+  },
+  {
+    name: "Victor Visuals",
+    href: "/youth/businesses/victor-visuals",
+    tagline: "Photography, videography, editing, and digital creativity.",
+    presentation: "typographic" as const,
+    statusLabel: "Youth Business",
+    linkLabel: "Explore Victor Visuals",
+  },
+];
 
 export default function YouthBusinessesPage() {
   return (
-    <main id="main-content" className="businesses-page">
-      <YouthNav />
-      <section className="businesses-hero">
-        <div className="businesses-hero__grid page-wrap">
-          <div className="businesses-hero__copy">
-            <p className="eyebrow eyebrow--gold"><span className="eyebrow__line" /> The youth business directory</p>
-            <h1>Good ideas<br /><em>grow here.</em></h1>
-            <p>A place to discover, encourage, and support the businesses our young people are building.</p>
-            <a href="#directory" className="businesses-hero__scroll">Meet the makers <span aria-hidden="true">↓</span></a>
-          </div>
-          <div className="businesses-hero__art" aria-hidden="true">
-            <span className="businesses-hero__sun" />
-            <span className="businesses-hero__ring businesses-hero__ring--one" />
-            <span className="businesses-hero__ring businesses-hero__ring--two" />
-            <span className="businesses-hero__vertical">CREATE · BUILD · SHARE</span>
-            <span className="businesses-hero__sticker">H<br /><i>community</i></span>
-          </div>
+    <main id="main-content" className="youth-businesses-page">
+      <section className="youth-businesses-intro">
+        <div className="page-wrap youth-businesses-intro__inner">
+          <p className="youth-businesses-eyebrow">Homestead Assembly Youth</p>
+          <h1>Youth Businesses</h1>
+          <p>Discover businesses created by young people in our community.</p>
+          <a href="#businesses" className="youth-businesses-scroll">Meet the businesses <span aria-hidden="true">↓</span></a>
         </div>
-        <span className="businesses-hero__bottom page-wrap"><span>Homestead Assembly</span><span>Young people at work</span></span>
+        <span className="youth-businesses-intro__spark" aria-hidden="true">✳</span>
       </section>
 
-      <section className="directory-section section-pad" id="directory">
+      <section className="youth-businesses-section section-pad" id="businesses" aria-label="Youth businesses">
         <div className="page-wrap">
-          <div className="directory-heading">
-            <SectionHeading
-              eyebrow="Meet the makers"
-              title="Built with heart. Backed by community."
-              description="Explore the sample profiles below. Real business listings will be added with each young entrepreneur's permission."
-            />
-            <span className="directory-heading__count">03 <i>sample profiles</i></span>
+          <div className="youth-businesses-heading">
+            <div>
+              <p className="youth-businesses-eyebrow">Made by our youth</p>
+              <h2>Meet the businesses.</h2>
+            </div>
+            <p>Explore four businesses created by young people in our community.</p>
           </div>
-          <div className="directory-toolbar">
-            <span>Featured directory</span>
-            <span className="directory-toolbar__rule" />
-            <span>All categories <span aria-hidden="true">⌄</span></span>
-          </div>
-          <div className="business-grid">
-            {sampleBusinesses.map((business, index) => (
-              <Reveal key={business.name} delay={index * 120}>
-                <YouthBusinessCard {...business} />
-              </Reveal>
+          <div className="youth-businesses-grid">
+            {businesses.map((business) => (
+              <YouthBusinessCard key={business.name} {...business} />
             ))}
           </div>
-          <div className="directory-note">
-            <span className="directory-note__mark" aria-hidden="true">✳</span>
-            <p>These are sample profiles. Business names and descriptions are illustrative and do not represent actual church members or businesses.</p>
-          </div>
-        </div>
-      </section>
-
-      <section className="business-cta">
-        <div className="business-cta__inner page-wrap">
-          <div>
-            <p className="eyebrow eyebrow--gold"><span className="eyebrow__line" /> Made something of your own?</p>
-            <h2>Your work<br /><em>belongs here.</em></h2>
-            <p>We look forward to celebrating the next generation of builders and makers.</p>
-          </div>
-          <Reveal>
-            <div className="business-cta__card">
-              <span className="business-cta__symbol" aria-hidden="true">H</span>
-              <p className="business-cta__label">Youth business directory</p>
-              <p>Listing information will be shared here when details are ready.</p>
-              <Button href="/#contact" variant="light">Connect with us</Button>
-            </div>
-          </Reveal>
         </div>
       </section>
     </main>

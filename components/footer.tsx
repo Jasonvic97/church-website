@@ -33,25 +33,34 @@ export function Footer() {
           </nav>
         </div>
         <div className="site-footer__column">
-          <p className="footer-label">Stay connected</p>
-          <p className="site-footer__contact">{siteConfig.contactNote}</p>
-          <div
-            className="footer-socials"
-            aria-label="Social media placeholders"
-          >
-            {siteConfig.socialLinks.map((social) => (
-              <span key={social.label} title={social.status}>
-                {social.label} <span>· {social.status}</span>
-              </span>
+          <p className="footer-label">Visit &amp; connect</p>
+          {/* <p className="site-footer__contact">{siteConfig.contactNote}</p> */}
+          <address className="site-footer__address">
+            <span>{siteConfig.address.street}</span>
+            <span>{siteConfig.address.locality}</span>
+          </address>
+          <p className="footer-label footer-label--subsection">Service times</p>
+          <ul className="footer-service-times">
+            {siteConfig.serviceTimes.map((service) => (
+              <li key={service.day}>
+                <span>{service.day}</span>
+                <time>{service.time}</time>
+              </li>
             ))}
-          </div>
+          </ul>
+          <nav className="footer-socials" aria-label="Official Homestead Assembly social media">
+            {siteConfig.socialLinks.map((social) => (
+              <a key={social.label} href={social.href} target="_blank" rel="noopener noreferrer">
+                {social.label} <span aria-hidden="true">↗</span>
+              </a>
+            ))}
+          </nav>
         </div>
       </div>
       <div className="site-footer__bottom">
         <span>
           © {new Date().getFullYear()} {siteConfig.name}
         </span>
-        <span className="site-footer__location">{siteConfig.location}</span>
         <Link href="/youth/businesses">
           Youth businesses <span aria-hidden="true">↗</span>
         </Link>

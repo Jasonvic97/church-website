@@ -4,7 +4,16 @@ export const siteConfig = {
   descriptor: "Body of Christ",
   welcome: "A place to grow in faith, find community, and live with purpose.",
   welcomeNote: "Welcome home.",
-  location: "Location details coming soon",
+  location: "Homestead, FL",
+  address: {
+    street: "29501 SW 152nd Ave",
+    locality: "Homestead, FL 33033",
+  },
+  serviceTimes: [
+    { day: "Thursday", time: "7:30 PM" },
+    { day: "Saturday", time: "6:30 PM" },
+    { day: "Sunday", time: "5:00 PM" },
+  ],
   haym: {
     name: "Homestead Assembly Youth Meeting",
     shortName: "HAYM",
@@ -25,17 +34,17 @@ export const siteConfig = {
   ],
   youthNavigation: [
     { label: "Youth Home", href: "/youth" },
-    { label: "HAYM", href: "/youth#haym" },
     { label: "Youth Businesses", href: "/youth/businesses" },
-    { label: "Youth Events", href: "/youth#youth-events" },
-    { label: "Youth Media", href: "/youth#youth-media" },
+    { label: "Events", href: "/youth/events" },
+    { label: "Youth Meeting", href: "/youth/meeting" },
+    { label: "Get Involved", href: "/youth/get-involved" },
   ],
   socialLinks: [
-    { label: "Instagram", href: "", status: "Coming soon" },
-    { label: "YouTube", href: "", status: "Coming soon" },
-    { label: "Facebook", href: "", status: "Coming soon" },
+    { label: "Instagram", href: "https://www.instagram.com/homesteadassembly/" },
+    { label: "YouTube", href: "https://www.youtube.com/@homesteadassembly6374" },
+    { label: "Facebook", href: "https://www.facebook.com/HomesteadAssembly" },
   ],
-  contactNote: "Service times and contact details will be shared here soon.",
+  // contactNote: "Join us for a service or connect online.",
 } as const;
 
 export const missionCards = [

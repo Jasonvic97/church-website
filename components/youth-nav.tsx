@@ -15,7 +15,7 @@ export function YouthNav() {
             priority
           />
         </Link>
-        <div>
+        <div className="youth-nav__links">
           {siteConfig.youthNavigation.map((item) => (
             <Link key={item.label} href={item.href}>{item.label}</Link>
           ))}
