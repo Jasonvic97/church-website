@@ -6,10 +6,10 @@ const linktreeUrl = "https://linktr.ee/tipofthespearofficial";
 const logoSrc = "/images/youth/tip-of-the-spear/logo.png";
 
 const focusAreas = [
-  "Spiritual",
+  "Spirituality",
   "Finance",
   "Physical",
-  "Intellect",
+  "Intellectual",
   "Mental",
   "Emotion",
   "Social",
