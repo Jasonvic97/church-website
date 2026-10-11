@@ -20,7 +20,7 @@ export default function ContactPage() {
               The church address, service times, and official social links are listed in the footer below.
             </p>
             <Link className="button button--primary" href="#contact">
-              View church information <span aria-hidden="true">↓</span>
+              View church information
             </Link>
           </div>
           <div>
@@ -30,7 +30,7 @@ export default function ContactPage() {
               Discover youth businesses, events, and ways to get involved with Homestead Assembly Youth.
             </p>
             <Link className="button button--primary" href="/youth">
-              Explore youth <span aria-hidden="true">↗</span>
+              Explore youth
             </Link>
           </div>
         </div>

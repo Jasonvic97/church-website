@@ -41,8 +41,8 @@ export default function SodaSanctuaryPage() {
             <p className="soda-hero__tagline">Sip Something Heavenly</p>
             <p className="soda-hero__description">A youth-created specialty drink business serving creative dirty sodas, energy drinks, Poppi creations, lemonades, and custom combinations. Refreshing drinks. Creative flavors. Made with purpose.</p>
             <div className="soda-hero__actions">
-              <a className="soda-button soda-button--instagram" href={instagramUrl} target="_blank" rel="noopener noreferrer">Follow on Instagram <span aria-hidden="true">→</span></a>
-              <a className="soda-button soda-button--menu" href="#menu">View Menu <span aria-hidden="true">→</span></a>
+              <a className="soda-button soda-button--instagram" href={instagramUrl} target="_blank" rel="noopener noreferrer">Follow on Instagram</a>
+              <a className="soda-button soda-button--menu" href="#menu">View Menu</a>
             </div>
           </div>
           <div className="soda-hero__photo-window">
@@ -61,7 +61,7 @@ export default function SodaSanctuaryPage() {
           <div className="soda-menu__image-wrap">
             <Image className="soda-menu__image" src="/images/youth/soda-sanctuary/menu.png?v=20260930200603" alt="The Soda Sanctuary menu, including sodas, energy drinks, Poppi, Heaven’s Lemon, and build-your-own options" width={1320} height={1824} sizes="(max-width: 900px) 100vw, 55vw" />
           </div>
-          <a className="soda-menu__open" href="/images/youth/soda-sanctuary/menu.png?v=20260930200603" target="_blank" rel="noopener noreferrer">Open full menu image <span aria-hidden="true">↗</span></a>
+          <a className="soda-menu__open" href="/images/youth/soda-sanctuary/menu.png?v=20260930200603" target="_blank" rel="noopener noreferrer">Open full menu image</a>
         </section>
 
         <div className="soda-showcase__aside">
@@ -81,7 +81,7 @@ export default function SodaSanctuaryPage() {
             <div className="soda-social__copy">
               <p className="soda-social__label">Follow Us</p>
               <p className="soda-social__handle">@thesodasanctuary</p>
-              <a className="soda-button soda-button--social" href={instagramUrl} target="_blank" rel="noopener noreferrer">Follow on Instagram <span aria-hidden="true">→</span></a>
+              <a className="soda-button soda-button--social" href={instagramUrl} target="_blank" rel="noopener noreferrer">Follow on Instagram</a>
             </div>
           </section>
         </div>

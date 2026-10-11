@@ -28,7 +28,7 @@ export default function CopyCatCharmsPage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Explore on Instagram <span aria-hidden="true">↗</span>
+              Explore on Instagram
             </a>
           </div>
 
@@ -103,7 +103,7 @@ export default function CopyCatCharmsPage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Order Red Velvet <span aria-hidden="true">↗</span>
+                Order Red Velvet
               </a>
             </div>
           </article>
@@ -121,7 +121,7 @@ export default function CopyCatCharmsPage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Instagram <span aria-hidden="true">↗</span>
+              Instagram
             </a>
             <a
               className={styles.socialLink}
@@ -129,7 +129,7 @@ export default function CopyCatCharmsPage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Threads <span aria-hidden="true">↗</span>
+              Threads
             </a>
           </nav>
         </div>

@@ -49,7 +49,7 @@ export function YouthBusinessCard({
           <h3>{name}</h3>
           <p className="youth-business-tile__tagline">{tagline}</p>
           <span className="youth-business-tile__link">
-            Discover Copy Cat Charms <span aria-hidden="true">↗</span>
+            Discover Copy Cat Charms
           </span>
         </div>
       </Link>
@@ -60,14 +60,25 @@ export function YouthBusinessCard({
     return (
       <Link className="youth-business-tile youth-business-tile--typographic" href={href}>
         <div className="youth-business-tile__typographic-art" aria-hidden="true">
-          <span>Stories<br />Through the Lens.</span>
+          {logoSrc ? (
+            <Image
+              className="youth-business-tile__typographic-logo"
+              src={logoSrc}
+              alt=""
+              width={1512}
+              height={2016}
+              sizes="(max-width: 900px) 50vw, 24vw"
+            />
+          ) : (
+            <span>Stories<br />Through the Lens.</span>
+          )}
         </div>
         <div className="youth-business-tile__content">
           <p className="youth-business-tile__status">{statusLabel ?? "Youth Business"}</p>
           <h3>{name}</h3>
           <p className="youth-business-tile__tagline">{tagline}</p>
           <span className="youth-business-tile__link">
-            {linkLabel ?? "Explore the business"} <span aria-hidden="true">↗</span>
+            {linkLabel ?? "Explore the business"}
           </span>
         </div>
       </Link>
@@ -86,7 +97,7 @@ export function YouthBusinessCard({
           <p className="youth-business-tile__status">{statusLabel ?? "Upcoming"}</p>
           <h3>{name}</h3>
           <p className="youth-business-tile__tagline">{tagline}</p>
-          <span className="youth-business-tile__link">{linkLabel ?? "Explore the business"} <span aria-hidden="true">↗</span></span>
+          <span className="youth-business-tile__link">{linkLabel ?? "Explore the business"}</span>
         </div>
       </Link>
     );
@@ -104,7 +115,7 @@ export function YouthBusinessCard({
         <p className="youth-business-tile__status">{statusLabel ?? "Featured Youth Business"}</p>
         <h3>{name}</h3>
         <p className="youth-business-tile__tagline">{tagline}</p>
-        <span className="youth-business-tile__link">{linkLabel ?? "Explore the business"} <span aria-hidden="true">↗</span></span>
+        <span className="youth-business-tile__link">{linkLabel ?? "Explore the business"}</span>
       </div>
     </Link>
   );

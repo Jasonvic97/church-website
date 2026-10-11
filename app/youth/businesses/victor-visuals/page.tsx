@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import styles from "./page.module.css";
 
 const visualSiteUrl = "https://jasonvictor.online";
@@ -51,10 +52,10 @@ export default function VictorVisualsPage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Explore Victor Visuals <span aria-hidden="true">↗</span>
+                Explore Victor Visuals
               </a>
               <a className={`${styles.button} ${styles.secondaryButton}`} href="#creative-services">
-                Discover Our Creative Work <span aria-hidden="true">↓</span>
+                Discover Our Creative Work
               </a>
             </div>
           </div>
@@ -62,6 +63,15 @@ export default function VictorVisualsPage() {
           <div className={styles.heroArtwork} aria-hidden="true">
             <span className={styles.artworkFrame} />
             <span className={styles.artworkCrosshair} />
+            <Image
+              className={styles.brandLogo}
+              src="/images/youth/victor-visuals/logo.png"
+              alt=""
+              width={1512}
+              height={2016}
+              sizes="(max-width: 680px) 58vw, (max-width: 900px) 38vw, 420px"
+              preload
+            />
             <span className={styles.artworkCaption}>Image · Motion · Digital</span>
           </div>
         </div>
@@ -117,7 +127,7 @@ export default function VictorVisualsPage() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Visit JasonVictor.online <span aria-hidden="true">↗</span>
+            Visit JasonVictor.online
           </a>
         </div>
       </section>

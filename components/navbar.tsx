@@ -63,7 +63,7 @@ export function Navbar() {
             </Link>
           ))}
           <Link className="primary-nav__visit" href="/contact" onClick={() => setIsOpen(false)}>
-            Plan a visit <span aria-hidden="true">↗</span>
+            Plan a visit
           </Link>
         </nav>
       </div>

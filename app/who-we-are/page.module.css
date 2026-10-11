@@ -1,0 +1,135 @@
+.page {
+  color: #242520;
+  background: #f5f3ee;
+}
+
+.wrap {
+  width: min(840px, calc(100% - 72px));
+  margin-inline: auto;
+}
+
+.hero {
+  padding-block: clamp(60px, 8vw, 100px);
+  color: #fffefa;
+  background:
+    radial-gradient(ellipse at 87% 16%, rgba(184, 155, 93, 0.19), transparent 31%),
+    linear-gradient(118deg, #171816, #242520 68%, #171816);
+}
+
+.eyebrow,
+.scriptureLabel {
+  margin: 0;
+  color: #d7c28d;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.19em;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 16px 0 0;
+  font-family: var(--font-display);
+  font-size: clamp(48px, 7vw, 84px);
+  font-weight: 400;
+  letter-spacing: -0.065em;
+  line-height: 0.98;
+}
+
+.story {
+  padding-block: clamp(50px, 7vw, 84px) clamp(38px, 5vw, 64px);
+}
+
+.paragraph {
+  margin: 0;
+  color: #363731;
+  font-size: clamp(14px, 1.15vw, 16px);
+  line-height: 1.9;
+}
+
+.paragraph + .paragraph {
+  margin-top: 22px;
+}
+
+.scripture {
+  margin: 0 auto clamp(64px, 9vw, 110px);
+  padding: clamp(24px, 4vw, 42px);
+  background: #fffefa;
+  border: 1px solid rgba(23, 24, 22, 0.1);
+  border-left: 3px solid #b89b5d;
+  box-shadow: 0 16px 42px rgba(23, 24, 22, 0.045);
+}
+
+.scriptureLabel {
+  color: #8a7548;
+}
+
+.scripture h2 {
+  margin: 10px 0 0;
+  color: #171816;
+  font-family: var(--font-display);
+  font-size: clamp(25px, 3vw, 34px);
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+}
+
+.scripture blockquote {
+  display: grid;
+  gap: 13px;
+  margin: 21px 0 0;
+}
+
+.scripture blockquote p {
+  margin: 0;
+  color: #41423c;
+  font-family: var(--font-display);
+  font-size: clamp(16px, 1.45vw, 19px);
+  line-height: 1.75;
+}
+
+.verseNumber {
+  margin-right: 4px;
+  color: #987e4e;
+  font-family: var(--font-sans);
+  font-size: 0.72em;
+  font-weight: 700;
+}
+
+@media (max-width: 640px) {
+  .wrap {
+    width: calc(100% - 40px);
+  }
+
+  .hero {
+    padding-block: 54px 60px;
+  }
+
+  .story {
+    padding-block: 40px 34px;
+  }
+
+  .paragraph {
+    font-size: 14px;
+    line-height: 1.82;
+  }
+
+  .paragraph + .paragraph {
+    margin-top: 19px;
+  }
+
+  .scripture {
+    margin-bottom: 58px;
+    padding: 22px 19px;
+  }
+
+  .scripture blockquote p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 360px) {
+  .wrap {
+    width: calc(100% - 32px);
+  }
+}

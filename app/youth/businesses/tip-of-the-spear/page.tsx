@@ -135,7 +135,7 @@ export default function TipOfTheSpearPage() {
             <span>COMING.</span>
           </h2>
           <a className={styles.button} href={linktreeUrl} target="_blank" rel="noopener noreferrer" aria-label="Follow Tip of the Spear on Linktree, opens in a new tab">
-            Follow The Tip of the Spear <span aria-hidden="true">↗</span>
+            Follow The Tip of the Spear
           </a>
         </div>
       </section>

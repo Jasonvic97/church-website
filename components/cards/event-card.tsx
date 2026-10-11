@@ -17,7 +17,7 @@ export function EventCard({ title, date, description, imageLabel, index }: Event
         <div className="event-card__meta"><span>{date}</span><span>{index}</span></div>
         <h3>{title}</h3>
         <p>{description}</p>
-        <Link className="text-link" href="/#contact">Get event updates <span aria-hidden="true">↗</span></Link>
+        <Link className="text-link" href="/#contact">Get event updates</Link>
       </div>
     </article>
   );

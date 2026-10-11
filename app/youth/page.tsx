@@ -94,7 +94,7 @@ export default function YouthPage() {
         <div className="page-wrap">
           <div className="events-section__heading">
             <SectionHeading eyebrow="Together is the point" title="Time to connect." description="Youth gatherings and event details will appear here as they are confirmed." />
-            <Link className="text-link" href="/#contact">Ask us about youth <span aria-hidden="true">↗</span></Link>
+            <Link className="text-link" href="/#contact">Ask us about youth</Link>
           </div>
           <div className="events-grid">
             {events.slice(1).map((event, index) => (

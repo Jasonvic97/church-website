@@ -13,7 +13,7 @@ import { events, latestMessage, missionCards, siteConfig, testimonies } from "@/
 export function WelcomeNote() {
   return (
     <div className="welcome-note">
-      <p>Rooted in faith.<br /><span>Growing together.</span></p>
+      <p>Walk by Faith.<br /><span>not by sight.</span></p>
       <span className="welcome-note__place">A church family<span aria-hidden="true"> · </span>{siteConfig.location}</span>
     </div>
   );
@@ -56,13 +56,11 @@ export function WhoWeAreSection() {
           <span className="image-note">A community shaped by faith, hospitality, and hope.</span>
         </Reveal>
         <Reveal className="who-section__copy" delay={110}>
-          <SectionHeading title="A church family, making room for one another." />
+          <SectionHeading title="The church of the living God." />
           <p className="body-copy">
-            Homestead Assembly is preparing this space to share our story, our faith, and the people who make this
-            church feel like home.
+            Today, 2,000 years later, the Body of Christ, the church of the living God is being restored to its original glory and power!
           </p>
-          <p className="placeholder-note"><span aria-hidden="true">✦</span> This introduction is sample copy and will be updated by the church.</p>
-          <Button href="/mission" variant="outline">Our mission</Button>
+          <Button href="/who-we-are" variant="outline">Read our story</Button>
         </Reveal>
       </div>
     </section>
@@ -134,7 +132,7 @@ export function YouthFeatureSection() {
           <p>Faith, friendship, creativity, and a place to become who you are called to be.</p>
           <div className="youth-feature__actions">
             <Button href="/youth" variant="light">Explore youth</Button>
-          <Link className="text-link text-link--light" href="/youth/businesses">Meet youth businesses <span aria-hidden="true">↗</span></Link>
+          <Link className="text-link text-link--light" href="/youth/businesses">Meet youth businesses</Link>
           </div>
         </Reveal>
         <div className="youth-feature__side" aria-hidden="true">HOMESTEAD ASSEMBLY · YOUTH</div>
@@ -149,7 +147,7 @@ export function MessagesSection() {
       <div className="page-wrap">
         <div className="messages-section__heading">
           <SectionHeading eyebrow="Take a moment" title="A word for the way." description="Listen, reflect, and carry a little encouragement with you." />
-          <Link className="text-link" href="/livestream">Livestream details <span aria-hidden="true">↗</span></Link>
+          <Link className="text-link" href="/livestream">Livestream details</Link>
         </div>
         <MessageCard {...latestMessage} />
       </div>
@@ -163,7 +161,7 @@ export function EventsSection() {
       <div className="page-wrap">
         <div className="events-section__heading">
           <SectionHeading eyebrow="Make a little room" title="Gather with us." description="Church and youth event information will be shared here as dates are confirmed." />
-          <Link className="text-link" href="/contact">Ask about visiting <span aria-hidden="true">↗</span></Link>
+          <Link className="text-link" href="/contact">Ask about visiting</Link>
         </div>
         <div className="events-grid">
           {events.map((event, index) => (
@@ -193,6 +191,73 @@ export function LivestreamSection() {
           <span className="livestream-card__rule" />
           <span className="livestream-card__meta">{siteConfig.shortName}</span>
         </div>
+      </div>
+    </section>
+  );
+}
+
+const homeSchedule = [
+  { day: "Saturday", gathering: "Service" },
+  { day: "Sunday", gathering: "Service" },
+  { day: "Thursday", gathering: "Prayer Meeting" },
+] as const;
+
+export function ScheduleSection() {
+  return (
+    <section className="home-schedule" aria-labelledby="home-schedule-title">
+      <div className="page-wrap">
+        <h2 className="home-schedule__title" id="home-schedule-title">Schedule</h2>
+        <div className="home-schedule__grid">
+          {homeSchedule.map((item) => {
+            const service = siteConfig.serviceTimes.find((entry) => entry.day === item.day);
+            if (!service) return null;
+
+            return (
+              <div className="home-schedule__item" key={item.day}>
+                <p className="home-schedule__day">{item.day}</p>
+                <p className="home-schedule__gathering">{item.gathering}</p>
+                <time className="home-schedule__time">{service.time}</time>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function HomeMissionPreview() {
+  return (
+    <section className="home-mission section-pad" aria-labelledby="home-mission-title">
+      <div className="page-wrap home-mission__inner">
+        <p className="eyebrow eyebrow--gold"><span className="eyebrow__line" /> Our mission</p>
+        <div className="home-mission__copy">
+          <h2 id="home-mission-title">A beacon of hope.</h2>
+          <p>
+            We want to do unto others as Christ has done to us: Give love, comfort, and hope. With the guidance of Almighty God, this we will do.
+          </p>
+          <Button href="/who-we-are" variant="outline">Read our story</Button>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function HomeVisitSection() {
+  return (
+    <section className="home-visit section-pad" aria-labelledby="home-visit-title">
+      <div className="page-wrap home-visit__inner">
+        <div className="home-visit__copy">
+          <p className="eyebrow">Visit Homestead Assembly</p>
+          <h2 id="home-visit-title">We welcome you.</h2>
+          <address>
+            <span>{siteConfig.address.street}</span>
+            <span>{siteConfig.address.locality}</span>
+          </address>
+        </div>
+        <Button href="/contact" variant="outline" className="home-visit__button">
+          Visit information
+        </Button>
       </div>
     </section>
   );

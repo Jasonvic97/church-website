@@ -51,7 +51,7 @@ export function Footer() {
           <nav className="footer-socials" aria-label="Official Homestead Assembly social media">
             {siteConfig.socialLinks.map((social) => (
               <a key={social.label} href={social.href} target="_blank" rel="noopener noreferrer">
-                {social.label} <span aria-hidden="true">↗</span>
+                {social.label}
               </a>
             ))}
           </nav>
@@ -62,7 +62,7 @@ export function Footer() {
           © {new Date().getFullYear()} {siteConfig.name}
         </span>
         <Link href="/youth/businesses">
-          Youth businesses <span aria-hidden="true">↗</span>
+          Youth businesses
         </Link>
       </div>
     </footer>

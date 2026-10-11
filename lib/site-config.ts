@@ -23,6 +23,8 @@ export const siteConfig = {
     theme: "A week to gather, grow, and go forward.",
   },
   navigation: [
+    { label: "Who We Are", href: "/who-we-are" },
+    { label: "Lead Ministers", href: "/lead-ministers" },
     { label: "Mission", href: "/mission" },
     { label: "Testimonies", href: "/testimonies" },
     { label: "Youth", href: "/youth" },

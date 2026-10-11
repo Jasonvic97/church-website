@@ -33,6 +33,7 @@ const businesses = [
   {
     name: "Victor Visuals",
     href: "/youth/businesses/victor-visuals",
+    logoSrc: "/images/youth/victor-visuals/logo.png",
     tagline: "Photography, videography, editing, and digital creativity.",
     presentation: "typographic" as const,
     statusLabel: "Youth Business",
@@ -48,7 +49,7 @@ export default function YouthBusinessesPage() {
           <p className="youth-businesses-eyebrow">Homestead Assembly Youth</p>
           <h1>Youth Businesses</h1>
           <p>Discover businesses created by young people in our community.</p>
-          <a href="#businesses" className="youth-businesses-scroll">Meet the businesses <span aria-hidden="true">↓</span></a>
+          <a href="#businesses" className="youth-businesses-scroll">Meet the businesses</a>
         </div>
         <span className="youth-businesses-intro__spark" aria-hidden="true">✳</span>
       </section>
